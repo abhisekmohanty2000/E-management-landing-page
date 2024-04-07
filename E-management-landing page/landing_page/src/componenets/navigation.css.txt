@@ -1,0 +1,60 @@
+.employee {
+  display: flex;
+  padding: 0px;
+  color: black;
+  margin-left: 5px;
+}
+
+.nav-content {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-left: 40px;
+}
+.nav-login {
+  display: flex;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-left: 400px;
+  gap: 20px;
+}
+ 
+.signup {
+  padding: 9px 18px;
+ 
+  border-radius: 5px;
+  background-color: rgb(35, 174, 35);
+  color: white;
+  border: 1px solid transparent;
+}
+
+.logo {
+  font-size: 70px;
+  margin-left: 20px;
+  margin-right: 16px;
+  color: black;
+}
+.home-nav {
+  text-decoration: none;
+  color: black;
+}
+.add-nav {
+  text-decoration: none;
+  color: black;
+}
+.view-nav {
+  text-decoration: none;
+  color: black;
+}
+.contact-nav{
+  text-decoration: none;
+  color: black;
+}
+.active {
+  border-bottom-style: solid;
+  border-color: rgb(35, 174, 35);
+
+  transition: width 0.1s ease-in-out, transform 0.1s ease-in-out;
+}

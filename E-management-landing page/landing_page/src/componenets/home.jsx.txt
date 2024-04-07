@@ -1,0 +1,75 @@
+import React from "react";
+import "./home.css";
+import Navigation from "./navigation";
+import { LuMoveRight } from "react-icons/lu";
+
+const Home = ({ navigate }) => {
+  return (
+    <div>
+      <Navigation />
+      <img src="image/Illustration.png" className="big-logo" />
+
+      <div>
+        <div className="home-content">
+          <h1>Employee Management</h1>
+        </div>
+        <div className="home-content-1">
+          <h1>since 8 years !</h1>
+        </div>
+        <p className="paragraph">
+          want to manage your global work-force with us?
+        </p>
+      </div>
+
+      <button onClick={() => navigate("/add-contact")} className="home-button">
+        Add Contacts
+      </button>
+      <h2 className="client-heading" id="about">
+        Our Clients
+      </h2>
+      <p className="client-para">
+        We have been working with some Fortune 500+ clients
+      </p>
+      <div className="middle-line"></div>
+      <img className="clients" src="image/Clients1.png"></img>
+      <div className="middle-line"></div>
+      <div className="about-content">
+        <h1 className="about-heading1">Manage your entire community</h1>
+        <h1 className="about-heading2"> in a single system</h1>
+        <p className="about-para">Who is the Nextcent suitable for?</p>
+      </div>
+
+      <div className="about-all-image">
+        <img
+          class="about-image"
+          src="image/clientGroups.png"
+          style={{ width: 120, height: 120 }}
+        />
+        <img
+          className="about-image"
+          src="image/MembershipOrganizatios.png"
+          style={{ width: 120, height: 120 }}
+        />
+        <img
+          className="about-image"
+          src="image/NationalAssociations.png"
+          style={{ width: 120, height: 120 }}
+        />
+      </div>
+      <div className="footer-text">
+        <h2>
+          "E-Management is the perfect solution for my ecommerce website, which
+          both easy to access and easy to maintain.”
+        </h2>
+        <h2 className="founder-info">ABHISEK MOHANTY, FOUNDER OF E-GROUPS</h2>
+      </div>
+      <div className="nav-login">
+        <p className="sign-up">
+          Register Now <LuMoveRight />
+        </p>
+      </div>
+    </div>
+  );
+};
+
+export default Home;
