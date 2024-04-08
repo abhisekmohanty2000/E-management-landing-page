@@ -1,0 +1,65 @@
+import React from "react";
+import "./navigation.css";
+import { MdManageAccounts } from "react-icons/md";
+import { Link, NavLink } from "react-router-dom";
+import { LuMoveRight } from "react-icons/lu";
+import { useNavigate } from "react-router-dom";
+// import SigninSignup from "./signinSignup";
+const Navigation = ({ hideAbout }) => {
+  const navigate = useNavigate();
+  const handleAboutClick = (e) => {
+    e.preventDefault();
+    document
+      .getElementById("about")
+      .scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
+  return (
+    <div>
+      <div className="employee ">
+        <Link to="/">
+          <MdManageAccounts className="logo" />
+        </Link>
+        <h1>E-Management</h1>
+
+        <div className="nav-content">
+          <NavLink to="/" className="home-nav">
+            Home
+          </NavLink>
+          <NavLink to="/add-contact" className="add-nav">
+            Add
+          </NavLink>
+          <NavLink to="/table-details" className="view-nav">
+            View
+          </NavLink>
+
+          <NavLink to="/sq" className="contact-nav">
+            Contact
+          </NavLink>
+
+          {!hideAbout && (
+            <a href="#about" className="view-nav" onClick={handleAboutClick}>
+              About
+            </a>
+          )}
+        </div>
+        <div className="nav-login">
+          <button
+            onClick={() => navigate("/sqt")}
+            className="signup"
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              gap: "8px",
+            }}
+          >
+            Register Now <LuMoveRight />{" "}
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Navigation;

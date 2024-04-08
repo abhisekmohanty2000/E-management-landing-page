@@ -1,0 +1,144 @@
+.middle-line {
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 10px;
+  width: 80%;
+  margin: 0 auto;
+}
+.mini-heading {
+  cursor: pointer;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.clients {
+  justify-content: center;
+  margin-left: 110px;
+  opacity: 3;
+  filter: brightness(1);
+  transform: translateX(-100%);
+  animation: slide-in 2s ease-in-out forwards;
+}
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.client-heading {
+  font-size: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  padding: 20px;
+}
+.client-para {
+  font-size: 3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -20px;
+}
+.home-content {
+  margin-left: 80px;
+  margin-top: 100px;
+  font-size: 5vh;
+}
+.home-content-1 {
+  margin-left: 80px;
+  font-size: 5vh;
+  margin-top: -50px;
+  color: rgb(35, 174, 35);
+}
+.paragraph {
+  margin-top: -13px;
+  margin-left: 80px;
+  font-size: 3vh;
+}
+.home-button {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  width: 10vw;
+  height: 7vh;
+  background-color: rgb(35, 174, 35);
+  color: white;
+  margin-left: 80px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  outline: none;
+  
+}
+.big-logo {
+  height: 350px;
+  width: 320px;
+  position: absolute;
+  float: right;
+  margin-top: 50px;
+  margin-left: 820px;
+  filter: brightness(0.8);
+  overflow: hidden;
+}
+
+.about-content {
+  gap: 1px;
+}
+.about-heading1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-heading2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-para {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-all-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
+  padding: 20px;
+
+
+}
+.about-image {
+  padding: 30px;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transform: translateZ(0);
+  filter: contrast(1.1) sharpness(0.5);
+  border: 2px solid rgb(209, 206, 206);
+  border-radius: 18px;
+  background-color: transparent;
+}
+.about-image:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+  box-shadow: 0px 3px 5px rgba(0.5, 0.5, 0.5, 0.7);
+}
+.footer-text {
+  margin-left: 60px;
+  margin-top: 130px;
+  opacity: 0.8;
+  font-size:15px;
+}
+.founder-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sign-up {
+  padding: 14px 18px;
+  border: 2px solid;
+  border-radius: 25px;
+  background-color: rgb(35, 174, 35);
+  color: white;
+ margin-left: 140px;
+}
+ 
